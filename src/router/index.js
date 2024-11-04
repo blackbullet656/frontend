@@ -23,11 +23,7 @@ const routes = [
     component: () => import('@/views/ContactAdd.vue'),
     props: (route) => ({ contactId: route.params.id })
   },
-  {
-    path: '/error',
-    name: 'ErrorPage',
-    component: () => import('@/views/ErrorPage.vue')
-  }
+  
 ];
 
 const router = createRouter({
